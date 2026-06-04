@@ -1,0 +1,388 @@
+.how-section {
+  background: radial-gradient(circle at 20% 20%, #122d52 0%, #071525 36%, #06111f 100%);
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0 120px;
+  font-family: "Inter", sans-serif;
+  scroll-margin-top: 80px;
+}
+
+.how-grid-bg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 90px 90px;
+  opacity: 0.75;
+}
+
+.how-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.how-pill,
+.industry-pill {
+  width: fit-content;
+  margin: 0 auto 28px;
+  padding: 9px 18px;
+  border-radius: 999px;
+  background: rgba(63, 140, 255, 0.14);
+  border: 1px solid rgba(63, 140, 255, 0.45);
+  color: #7db8ff;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.how-heading,
+.industry-heading {
+  text-align: center;
+}
+
+.how-heading h2,
+.industry-heading h2 {
+  font-size: 48px;
+  line-height: 1.15;
+  font-weight: 900;
+  letter-spacing: -2px;
+  margin-bottom: 22px;
+}
+
+.how-heading h2 span,
+.industry-heading h2 span {
+  color: #7db8ff;
+}
+
+.how-heading p,
+.industry-heading p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #9aa7b8;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 66px;
+}
+
+.step-card {
+  min-height: 310px;
+  background: rgba(27, 42, 63, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 18px;
+  padding: 38px 32px;
+  text-align: center;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: rgba(63, 140, 255, 0.55);
+  box-shadow: 0 30px 70px rgba(63, 140, 255, 0.12);
+}
+
+.step-card strong {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  color: rgba(63, 140, 255, 0.16);
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.step-icon {
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 26px;
+  border-radius: 14px;
+  background: rgba(63, 140, 255, 0.17);
+  border: 1px solid rgba(63, 140, 255, 0.4);
+  color: #7db8ff;
+  display: grid;
+  place-items: center;
+}
+
+.step-card h3 {
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.step-card h4 {
+  color: #4b9cff;
+  font-size: 14px;
+  margin-bottom: 22px;
+}
+
+.step-card p {
+  color: #9aa7b8;
+  line-height: 1.65;
+  font-size: 15px;
+}
+
+.industry-block {
+  margin-top: 135px;
+}
+
+.industry-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 52px 0 46px;
+  flex-wrap: wrap;
+}
+
+.industry-tabs button {
+  height: 46px;
+  padding: 0 24px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #8f9bad;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.industry-tabs button:hover {
+  color: white;
+  transform: translateY(-2px);
+}
+
+.industry-card {
+  max-width: 930px;
+  margin: 0 auto;
+  background: rgba(27, 42, 63, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 20px;
+  padding: 42px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 46px;
+  align-items: center;
+}
+
+.plugin-pill {
+  width: fit-content;
+  padding: 8px 13px;
+  border-radius: 999px;
+  border: 1px solid;
+  font-size: 12px;
+  font-weight: 800;
+  margin-bottom: 26px;
+}
+
+.industry-left h3 {
+  font-size: 25px;
+  line-height: 1.35;
+  margin-bottom: 28px;
+  font-weight: 900;
+}
+
+.industry-left ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px;
+  display: grid;
+  gap: 16px;
+}
+
+.industry-left li {
+  color: #a7b3c4;
+  font-size: 14px;
+}
+
+.industry-left li::before {
+  content: "✓";
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 20%, transparent);
+  border-radius: 50%;
+  padding: 1px 5px;
+  margin-right: 12px;
+}
+
+.industry-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.industry-actions button {
+  height: 48px;
+  padding: 0 24px;
+  border-radius: 7px;
+  border: none;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.industry-actions .outline {
+  background: transparent;
+  border: 1px solid;
+}
+
+.industry-dashboard {
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(35, 50, 73, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.dash-top {
+  height: 36px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  gap: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.dash-top div span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.dash-top div span:nth-child(1) {
+  background: #ff625c;
+}
+
+.dash-top div span:nth-child(2) {
+  background: #ffc94d;
+}
+
+.dash-top div span:nth-child(3) {
+  background: #31d158;
+}
+
+.dash-top p {
+  color: #7f8da0;
+  font-size: 11px;
+}
+
+.dash-top small {
+  margin-left: auto;
+  font-size: 10px;
+}
+
+.dash-body {
+  padding: 18px;
+}
+
+.metric {
+  height: 50px;
+  background: rgba(255, 255, 255, 0.055);
+  border-radius: 7px;
+  margin-bottom: 12px;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.metric span {
+  color: #7f8da0;
+  font-size: 12px;
+}
+
+.metric b {
+  font-size: 20px;
+}
+
+.mini-chart {
+  height: 145px;
+  background: linear-gradient(180deg, rgba(63, 140, 255, 0.12), rgba(63, 140, 255, 0.02));
+  border-radius: 8px;
+  padding: 18px;
+  margin-top: 12px;
+}
+
+.mini-chart svg {
+  width: 100%;
+  height: 100%;
+}
+
+.animated-graph-line {
+  stroke-dasharray: 650;
+  stroke-dashoffset: 650;
+  animation: drawGraph 1.2s ease forwards;
+}
+
+.dash-lines {
+  margin-top: 16px;
+  display: grid;
+  gap: 7px;
+}
+
+.dash-lines i {
+  height: 6px;
+  border-radius: 999px;
+  opacity: 0.78;
+  width: 0;
+  animation: lineGrow 0.9s ease forwards;
+}
+
+@keyframes drawGraph {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes lineGrow {
+  to {
+    width: var(--line-width);
+  }
+}
+
+@media (max-width: 992px) {
+  .how-container {
+    padding: 0 24px;
+  }
+
+  .steps-grid,
+  .industry-card {
+    grid-template-columns: 1fr;
+  }
+
+  .how-heading h2,
+  .industry-heading h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .how-section {
+    padding: 85px 0;
+  }
+
+  .how-container {
+    padding: 0 20px;
+  }
+
+  .how-heading h2,
+  .industry-heading h2 {
+    font-size: 34px;
+  }
+
+  .step-card,
+  .industry-card {
+    padding: 28px 22px;
+  }
+
+  .industry-actions {
+    flex-direction: column;
+  }
+}
