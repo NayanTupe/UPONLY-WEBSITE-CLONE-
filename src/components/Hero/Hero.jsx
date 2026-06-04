@@ -3,14 +3,32 @@ import { ArrowRight } from "lucide-react";
 import "./Hero.css";
 
 const Hero = () => {
-  const words = [
-    "Track Activity",
-    "Measure Sales",
-    "Close Deals",
-    "Grow Faster",
+  const words = ["Track Activity", "Measure Sales", "Close Deals", "Grow Faster"];
+  const [wordIndex, setWordIndex] = useState(0);
+  const [showLogoPill, setShowLogoPill] = useState(false);
+
+  const companies = [
+    ["M3", "Medi365"],
+    ["AC", "Acuite"],
+    ["QC", "Quanteye Capital"],
+    ["PN", "PropNex"],
+    ["FE", "FinEdge"],
+    ["WF", "WealthFirst"],
+    ["1CS", "1 Corner Stone"],
+    ["ST", "Stallions"],
+    ["M3", "Medi365"],
+    ["AC", "Acuite"],
+    ["QC", "Quanteye Capital"],
+    ["PN", "PropNex"],
   ];
 
-  const [wordIndex, setWordIndex] = useState(0);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowLogoPill(true);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -21,13 +39,29 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="hero-section">
+    <section id="home" className="hero-section">
       <div className="hero-bg-grid"></div>
 
       <div className="hero-container">
         <div className="hero-content">
           <div className="hero-pill">
-            <span></span>
+            {!showLogoPill ? (
+              <div className="pill-text">
+                <span className="pill-dot"></span>
+                SALES MANAGEMENT OS
+              </div>
+            ) : (
+              <div className="pill-inner">
+                <span className="pill-dot"></span>
+
+                <div className="pill-logo">
+                  <span className="s">S</span>
+                  <span className="m">M</span>
+                  <span className="o">O</span>
+                  <span className="s2">S</span>
+                </div>
+              </div>
+            )}
           </div>
 
           <h1>
@@ -54,6 +88,7 @@ const Hero = () => {
             <button className="primary-btn">
               Get Started <ArrowRight size={18} />
             </button>
+
             <button className="secondary-btn">How It Works</button>
           </div>
         </div>
@@ -66,6 +101,7 @@ const Hero = () => {
                 <span className="yellow"></span>
                 <span className="green"></span>
               </div>
+
               <p>SMOS Dashboard</p>
               <small>● Live</small>
             </div>
@@ -136,7 +172,7 @@ const Hero = () => {
             🎯
             <div>
               <span>Lead Score</span>
-              <b>94</b>
+              <b>94/100</b>
             </div>
           </div>
 
@@ -146,6 +182,35 @@ const Hero = () => {
               <span>Pipeline</span>
               <b>₹4.2Cr</b>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="trust-users">
+        <div className="avatar blue">S</div>
+        <div className="avatar green">A</div>
+        <div className="avatar orange">M</div>
+        <div className="avatar purple">Q</div>
+        <div className="avatar red">R</div>
+
+        <p>
+          <strong>30,000+</strong> professionals trust SMOS
+        </p>
+      </div>
+
+      <div className="logo-marquee-section">
+        <p className="trust-title">
+          Trusted by forward-thinking companies across India
+        </p>
+
+        <div className="logo-marquee">
+          <div className="logo-track">
+            {[...companies, ...companies].map((company, index) => (
+              <div className="brand-item" key={index}>
+                <span>{company[0]}</span>
+                <b>{company[1]}</b>
+              </div>
+            ))}
           </div>
         </div>
       </div>
