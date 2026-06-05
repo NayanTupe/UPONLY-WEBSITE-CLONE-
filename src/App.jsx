@@ -19,19 +19,7 @@ function App() {
         <Impact />
         <BookDemo />
 
-      <main>
-        <section
-          style={{
-            minHeight: "100vh", 
-            background: "#f5f7fa",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <h1>Welcome to UpOnly Technologies</h1>
-        </section>
-      </main>
+     
     </>
   );
 }
