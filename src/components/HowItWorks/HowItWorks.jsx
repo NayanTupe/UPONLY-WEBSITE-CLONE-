@@ -126,7 +126,9 @@ const HowItWorks = () => {
           {steps.map((step) => (
             <div className="step-card" key={step.no}>
               <strong>{step.no}</strong>
+
               <div className="step-icon">{step.icon}</div>
+
               <h3>{step.title}</h3>
               <h4>{step.sub}</h4>
               <p>{step.desc}</p>
@@ -134,7 +136,7 @@ const HowItWorks = () => {
           ))}
         </div>
 
-        <div className="industry-block">
+        <div id="products" className="industry-block">
           <div className="industry-pill">● INDUSTRY SOLUTIONS</div>
 
           <div className="industry-heading">
@@ -198,9 +200,13 @@ const HowItWorks = () => {
                 <button style={{ background: activeTab.color }}>
                   Book a Demo 📅
                 </button>
+
                 <button
                   className="outline"
-                  style={{ color: activeTab.color, borderColor: activeTab.color }}
+                  style={{
+                    color: activeTab.color,
+                    borderColor: activeTab.color,
+                  }}
                 >
                   Learn More →
                 </button>
@@ -217,6 +223,7 @@ const HowItWorks = () => {
                   <span></span>
                   <span></span>
                 </div>
+
                 <p>{activeTab.dash}</p>
                 <small style={{ color: activeTab.color }}>● Live</small>
               </div>
