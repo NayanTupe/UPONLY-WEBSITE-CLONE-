@@ -1,0 +1,147 @@
+.book-demo-section {
+  background: radial-gradient(circle at 80% 30%, #123b72 0%, #071525 35%, #06111f 100%);
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  padding: 120px 0;
+  font-family: "Inter", sans-serif;
+  scroll-margin-top: 73px;
+}
+
+.book-demo-bg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 90px 90px;
+}
+
+.book-demo-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.demo-pill {
+  height: 32px;
+  max-width: 500px;
+  border-radius: 999px;
+  background: rgba(63, 140, 255, 0.14);
+  border: 1px solid rgba(63, 140, 255, 0.45);
+  color: #7db8ff;
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 38px;
+}
+
+.demo-left h2 {
+  font-size: 48px;
+  line-height: 1.15;
+  font-weight: 900;
+  letter-spacing: -2px;
+  margin-bottom: 24px;
+}
+
+.demo-left p {
+  max-width: 520px;
+  color: #9aa7b8;
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.sales-link {
+  color: #9bd0ff;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.demo-form {
+  background: rgba(27, 42, 63, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.28);
+}
+
+.demo-form h3 {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.demo-form input,
+.demo-form select,
+.demo-form textarea {
+  width: 100%;
+  height: 48px;
+  border-radius: 9px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  padding: 0 15px;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+.demo-form select option {
+  background: #1f2940;
+  color: #ffffff;
+}
+
+.demo-form textarea {
+  height: 82px;
+  resize: vertical;
+  padding-top: 14px;
+  margin-top: 14px;
+}
+
+.demo-form input::placeholder,
+.demo-form textarea::placeholder {
+  color: #8f9bad;
+}
+
+.demo-form button {
+  width: 100%;
+  height: 50px;
+  margin-top: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #4b8fe8;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .book-demo-container {
+    grid-template-columns: 1fr;
+    padding: 0 24px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .demo-left h2 {
+    font-size: 38px;
+  }
+}

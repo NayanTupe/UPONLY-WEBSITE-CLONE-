@@ -16,6 +16,15 @@ const Header = () => {
 
   const closeMenu = () => setOpen(false);
 
+  const scrollToBookDemo = () => {
+    closeMenu();
+
+    document.getElementById("book-demo")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+
   return (
     <header className="site-header">
       <div className="header-container">
@@ -31,12 +40,16 @@ const Header = () => {
           ))}
 
           <div className="mobile-actions">
-            <button className="login-btn">
+            <button className="login-btn" type="button">
               <LogIn size={16} />
               Login / Sign Up
             </button>
 
-            <button className="demo-btn">
+            <button
+              className="demo-btn"
+              type="button"
+              onClick={scrollToBookDemo}
+            >
               <CalendarDays size={16} />
               Book a Demo
             </button>
@@ -44,18 +57,23 @@ const Header = () => {
         </nav>
 
         <div className="header-actions">
-          <button className="login-btn">
+          <button className="login-btn" type="button">
             <LogIn size={16} />
             Login / Sign Up
           </button>
 
-          <button className="demo-btn">
+          <button className="demo-btn" type="button" onClick={scrollToBookDemo}>
             <CalendarDays size={16} />
             Book a Demo
           </button>
         </div>
 
-        <button className="menu-btn" onClick={() => setOpen(!open)}>
+        <button
+          className="menu-btn"
+          type="button"
+          onClick={() => setOpen(!open)}
+          aria-label="Toggle menu"
+        >
           {open ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>

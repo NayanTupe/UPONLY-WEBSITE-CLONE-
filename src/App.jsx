@@ -4,6 +4,8 @@ import AboutSMOS from "./components/AboutSMOS/AboutSMOS";
 import HowItWorks from "./components/HowItWorks/HowItWorks";
 import Capabilities from "./components/Capabilities/Capabilities";
 import { HouseWifi } from "lucide-react";
+import Impact from "./components/Impact/Impact";
+import BookDemo from "./components/BookDemo/BookDemo";
 
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
         <AboutSMOS />
         <HowItWorks />
         <Capabilities />
+        <Impact />
+        <BookDemo />
 
       <main>
         <section
