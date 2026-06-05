@@ -15,7 +15,7 @@ const steps = [
     icon: <Settings size={26} />,
     title: "Configure",
     sub: "Tailor to your workflow",
-    desc: "Set up deal pipelines, team hierarchies, and automation rules, and industry-specific modules. Everything is config-driven — no code required.",
+    desc: "Set up deal pipelines, team hierarchies, automation rules, and industry-specific modules. Everything is config-driven — no code required.",
   },
   {
     no: "03",
@@ -126,9 +126,7 @@ const HowItWorks = () => {
           {steps.map((step) => (
             <div className="step-card" key={step.no}>
               <strong>{step.no}</strong>
-
               <div className="step-icon">{step.icon}</div>
-
               <h3>{step.title}</h3>
               <h4>{step.sub}</h4>
               <p>{step.desc}</p>

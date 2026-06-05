@@ -2,6 +2,7 @@ import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import AboutSMOS from "./components/AboutSMOS/AboutSMOS";
 import HowItWorks from "./components/HowItWorks/HowItWorks";
+import Capabilities from "./components/Capabilities/Capabilities";
 import { HouseWifi } from "lucide-react";
 
 
@@ -12,6 +13,7 @@ function App() {
        <Hero />
         <AboutSMOS />
         <HowItWorks />
+        <Capabilities />
 
       <main>
         <section
