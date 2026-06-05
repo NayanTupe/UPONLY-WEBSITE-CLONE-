@@ -1,0 +1,225 @@
+.impact-section {
+  background: #ffffff;
+  padding: 92px 0 110px;
+  font-family: "Inter", sans-serif;
+  color: #0f172a;
+  scroll-margin-top: 73px;
+}
+
+.impact-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.impact-pill {
+  width: fit-content;
+  margin: 0 auto 28px;
+  padding: 9px 18px;
+  border-radius: 999px;
+  background: #eaf3ff;
+  border: 1px solid #cfe2ff;
+  color: #1f66c2;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.impact-heading {
+  text-align: center;
+  margin-bottom: 54px;
+}
+
+.impact-heading h2 {
+  font-size: 46px;
+  line-height: 1.12;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.impact-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.impact-stat-card {
+  min-height: 200px;
+  background: #f8fafc;
+  border: 1px solid #dce5f1;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.28s ease;
+}
+
+.impact-stat-card:hover {
+  transform: translateY(-8px) scale(1.015);
+  border-color: #9dccff;
+  box-shadow: 0 28px 70px rgba(37, 99, 235, 0.12);
+}
+
+.impact-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 11px;
+  display: grid;
+  place-items: center;
+  border: 1px solid;
+  margin-bottom: 22px;
+}
+
+.impact-stat-card h3 {
+  font-size: 46px;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: -1.5px;
+  margin-bottom: 14px;
+}
+
+.impact-stat-card p {
+  color: #66758d;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.growth-card {
+  margin: 48px auto 0;
+  background: #f8fafc;
+  border: 1px solid #dce5f1;
+  border-radius: 18px;
+  padding: 36px 40px;
+}
+
+.growth-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 34px;
+}
+
+.growth-header h3 {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.growth-header span {
+  background: #eaf3ff;
+  border: 1px solid #cfe2ff;
+  color: #1f66c2;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.growth-row {
+  display: grid;
+  grid-template-columns: 190px 1fr 60px;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 24px;
+}
+
+.growth-label {
+  color: #334155;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.growth-track {
+  height: 18px;
+  background: #edf2f7;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.growth-fill {
+  height: 100%;
+  border-radius: 999px;
+  width: 0;
+  animation: impactGrow 1.2s ease forwards;
+}
+
+.blue-fill {
+  background: #3f8cff;
+  --target-width: 75%;
+}
+
+.green-fill {
+  background: #12b981;
+  --target-width: 85%;
+  animation-delay: 0.2s;
+}
+
+.blue-text {
+  color: #3f8cff;
+}
+
+.green-text {
+  color: #12b981;
+}
+
+.growth-row strong {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.growth-years {
+  border-top: 1px solid #dce5f1;
+  padding-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  color: #8aa0b8;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+@keyframes impactGrow {
+  to {
+    width: var(--target-width);
+  }
+}
+
+@media (max-width: 992px) {
+  .impact-container {
+    padding: 0 24px;
+  }
+
+  .impact-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .impact-heading h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .impact-section {
+    padding: 80px 0;
+  }
+
+  .impact-container {
+    padding: 0 20px;
+  }
+
+  .impact-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .impact-heading h2 {
+    font-size: 32px;
+  }
+
+  .growth-card {
+    padding: 28px 20px;
+  }
+
+  .growth-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
