@@ -1,16 +1,114 @@
-# React + Vite
+# SMOS - Sales Management Operating System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive marketing and sales platform built with **React** and **Vite**. SMOS is a comprehensive Sales Management Operating System designed to track the entire sales lifecycle — from capturing field activities to measuring team efficiency and closing deals.
 
-Currently, two official plugins are available:
+## 🎯 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+SMOS bridges the gap that traditional CRMs like Salesforce leave behind. While CRMs track leads, SMOS manages the entire sales lifecycle:
 
-## React Compiler
+- **Activity Intelligence**: Automatically capture every call, visit, follow-up, and client interaction
+- **Real-time Analytics**: Live dashboards with instant metrics and drill-down capabilities
+- **Workflow Automation**: Automate lead assignments, follow-up sequences, and escalations
+- **AI-Powered Insights**: Intelligent lead scoring, deal predictions, and next-best-action recommendations
+- **Seamless Integrations**: Connect WhatsApp, email, SMS, payment gateways, and third-party tools
+- **Lightning Data Sync**: Real-time bidirectional sync across web, mobile, and API
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+Visit the deployed application: [SMOS on Vercel](https://uponlytech.vercel.app)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 💻 Tech Stack
+
+- **Frontend Framework**: React 19.2.6
+- **Build Tool**: Vite 8.0.12
+- **Styling**: CSS3 with responsive design
+- **Icons**: Lucide React 1.17.0
+- **Email Service**: EmailJS 3.2.0
+- **Linting**: ESLint 10.3.0
+
+## 📋 Project Structure
+
+```
+uponlytech/
+├── public/                    # Static assets
+├── src/
+│   ├── components/           # React components
+│   │   ├── Header/          # Navigation header
+│   │   ├── Hero/            # Hero section with animated text
+│   │   ├── AboutSMOS/       # Product overview & features
+│   │   ├── HowItWorks/      # Process explanation
+│   │   ├── Capabilities/    # Feature showcase
+│   │   ├── Impact/          # Results & social proof
+│   │   └── BookDemo/        # Demo booking form
+│   ├── App.jsx              # Main application component
+│   ├── main.jsx             # Application entry point
+│   ├── App.css              # Global styles
+│   └── index.css            # Base styles
+├── package.json             # Dependencies & scripts
+└── vite.config.js          # Vite configuration
+```
+
+## 🛠️ Installation & Setup
+
+### Prerequisites
+- Node.js 16.x or higher
+- npm or yarn package manager
+
+### Install Dependencies
+```bash
+npm install
+```
+
+### Development Server
+```bash
+npm run dev
+```
+The application will run at `http://localhost:5173`
+
+### Build for Production
+```bash
+npm run build
+```
+
+### Preview Production Build
+```bash
+npm run preview
+```
+
+## 🧹 Code Quality
+
+Run ESLint to check code quality:
+```bash
+npm run lint
+```
+
+## 📦 Key Features Implemented
+
+### 1. **Responsive Design**
+   - Mobile-first approach
+   - Adaptive layouts for all screen sizes
+   - Smooth animations and transitions
+
+### 2. **Interactive Components**
+   - Animated hero section with rotating feature highlights
+   - Dynamic company carousel
+   - Email-based booking form integration
+   - Activity tracking visualization
+
+### 3. **Performance Optimized**
+   - Fast HMR (Hot Module Replacement) with Vite
+   - Optimized CSS and component structure
+   - Efficient re-render patterns
+
+### 4. **Accessibility**
+   - Semantic HTML structure
+   - ARIA labels where appropriate
+   - Keyboard navigation support
+
+## 🤝 Contributing
+
+This is a production project deployed on Vercel. For contributions, please follow the existing code structure and style conventions.
+
+## 📝 License
+
+All rights reserved - SMOS Project
